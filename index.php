@@ -15,6 +15,8 @@
 </head>
 <body>
 
+    <a href="formCadastrar.php">Cadastrar uma nova pessoa</a>
+
     <table>
         <tr>
             <th>Nome</th>
