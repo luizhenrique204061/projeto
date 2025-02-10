@@ -16,13 +16,13 @@
     <label for="nome">Nome: </label>
     <br>
     
-    <input type="text" id="nome" name="nome">
+    <input type="text" id="nome" name="nome" placeholder="Nome">
     <br>
 
     <label for="idade">Idade: </label>
     <br>
     
-    <input type="number" id="idade" name="idade">
+    <input type="number" id="idade" name="idade" placeholder="Idade">
     <br>
     
     <input type="submit" value="Cadastrar pessoa">

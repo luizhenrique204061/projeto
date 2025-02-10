@@ -21,7 +21,7 @@
         <tr>
             <th>Nome</th>
             <th>Idade</th>
-            <th>Acões</th>
+            <th colspan="2">Acões</th>
         </tr>
 
 
@@ -34,6 +34,7 @@
             
             <td><?php echo $linha['nome'] ?></td>
             <td><?php echo $linha['idade'] ?></td>
+            <td><?php echo "<a href='formAlterar.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Alterar</a>"?></td>
             <td><?php echo "<a href='formExcluir.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Excluir</a>"?></td>
         </tr>
 
