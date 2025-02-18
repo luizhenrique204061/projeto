@@ -13,6 +13,7 @@
     <br>
     <form action="cadastrar.php" method="POST">
 
+    <fieldset>
     <label for="nome">Nome: </label>
     <br>
     
@@ -25,7 +26,11 @@
     <input type="number" id="idade" name="idade" placeholder="Idade">
     <br>
     
-    <input type="submit" value="Cadastrar pessoa">
+    <input class="botaoSubmit" type="submit" value="Cadastrar pessoa">
+
+    </fieldset>
+
+    
 
     </form>
 

@@ -11,7 +11,14 @@
 
     <a href="index.php">Cancelar exclusão e voltar</a>
     <br>
-    <p><?php echo "Realmente deseja excluir $_GET[nome] com $_GET[idade] anos de idade?"?></p>
+    <?php
+    /*
+    //O código comentado exibe essa frase sem negrito: Realmente deseja excluir com anos de idade?
+        <p><?php echo "Realmente deseja excluir $_GET[nome] com $_GET[idade] anos de idade?"?></p>
+    */
+    ?>
+    <p>Realmente deseja excluir <strong><?php echo $_GET['nome']?></strong> com <?php echo $_GET['idade']?> anos de idade?</p>
+    <br>
     <form action="excluir.php" method="POST">
 
     <input type="hidden" name="codigo" value="<?php echo $_GET['codigo']; ?>">

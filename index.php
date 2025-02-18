@@ -16,6 +16,7 @@
 <body>
 
     <a href="formCadastrar.php">Cadastrar uma nova pessoa</a>
+    <br>
 
     <table>
         <tr>
@@ -34,8 +35,8 @@
             
             <td><?php echo $linha['nome'] ?></td>
             <td><?php echo $linha['idade'] ?></td>
-            <td><?php echo "<a href='formAlterar.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Alterar</a>"?></td>
-            <td><?php echo "<a href='formExcluir.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Excluir</a>"?></td>
+            <td id="alterar"><?php echo "<a class='botaoAcoes' href='formAlterar.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Alterar</a>"?></td>
+            <td id="excluir"><?php echo "<a class='botaoAcoes' href='formExcluir.php?codigo=$linha[codigo]&nome=$linha[nome]&idade=$linha[idade]'>Excluir</a>"?></td>
         </tr>
 
         <?php endwhile ?>
